@@ -1,26 +1,26 @@
-# start of file
-variable "aws.region" {
-description= "region for aws"
-default= "us-west-2"
+variable "aws_region" {
+  description = "Region for the VPC"
+  default = "ap-southeast-1"
 }
 
 variable "vpc_cidr" {
-description= "cidr for the VPC"
-default= "10.0.0.0/16"
+  description = "CIDR for the VPC"
+  default = "10.0.0.0/16"
 }
-variable "public_subnet_cidr"
-decription= "cidr for public subnet"
-default= "10.0.0.0/24"
+
+variable "public_subnet_cidr" {
+  description = "CIDR for the public subnet"
+  default = "10.0.1.0/24"
 }
 
 variable "private_subnet_cidr" {
-description-= "cidr for private subnet"
-default= "10.0.1.0/24"
+  description = "CIDR for the private subnet"
+  default = "10.0.2.0/24"
 }
 
 variable "ami" {
-description= "Amazon ubuntu image"
-default= "ami-0b37e9efc396e4c38 (64-bit x86"
+  description = "Amazon Linux AMI"
+  default = "ami-14c5486b"
 }
 
 variable "key_path" {
